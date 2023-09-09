@@ -73,10 +73,7 @@ set_target_properties(minisat_simp       PROPERTIES OUTPUT_NAME "minisat")
 #--------------------------------------------------------------------------------------------------
 # Installation targets:
 
-install(TARGETS minisat-lib-static minisat-lib-shared minisat_core minisat_simp 
-        RUNTIME DESTINATION bin
-        LIBRARY DESTINATION lib
-        ARCHIVE DESTINATION lib)
+install(TARGETS minisat-lib-static minisat-lib-shared minisat_core minisat_simp)
 
 install(DIRECTORY minisat/mtl minisat/utils minisat/core minisat/simp
         DESTINATION include/minisat
